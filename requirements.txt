@@ -1,0 +1,8 @@
+streamlit
+joblib
+numpy
+plotly.express
+folium
+pandas
+streamlit_folium
+pickle
