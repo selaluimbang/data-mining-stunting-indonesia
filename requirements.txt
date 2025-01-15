@@ -1,8 +1,10 @@
 streamlit
 folium
 streamlit_folium
+joblib
 pandas
 numpy
 xgboost
 plotly.express
 mlxtend
+
