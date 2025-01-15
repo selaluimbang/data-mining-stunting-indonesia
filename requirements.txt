@@ -1,8 +1,8 @@
 streamlit
-joblib
-numpy
-plotly.express
 folium
 streamlit_folium
 pandas
+numpy
+xgboost
+plotly.express
 mlxtend
