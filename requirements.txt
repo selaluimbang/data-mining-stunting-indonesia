@@ -3,4 +3,6 @@ joblib
 numpy
 plotly.express
 folium
+streamlit_folium
 pandas
+mlxtend

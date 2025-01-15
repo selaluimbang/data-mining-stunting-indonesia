@@ -2,7 +2,7 @@ import streamlit as st
 from predict import make_prediction
 import pandas as pd
 import folium
-# from streamlit_folium import st_folium
+from streamlit_folium import st_folium
 import plotly.express as px
 
 def main():
@@ -171,8 +171,8 @@ def main():
         st.plotly_chart(fig)
 
         # Add map of Indonesia
-        # m = folium.Map(location=[4.401489, 142.542279], zoom_start=4.2)
-        # st_folium(m, width=1200, height=400)
+        m = folium.Map(location=[4.401489, 142.542279], zoom_start=4.2)
+        st_folium(m, width=1200, height=400)
 
     st.markdown('</div>', unsafe_allow_html=True)
 
