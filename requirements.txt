@@ -1,7 +1,7 @@
 streamlit
 joblib
-pickle
 numpy
 plotly.express
 folium
 pandas
+pickle
