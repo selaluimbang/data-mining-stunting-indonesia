@@ -163,11 +163,25 @@ def main():
         st.markdown('<div class="card"><h5>Visualisasi Data dan Peta</h5></div>', unsafe_allow_html=True)
 
         # Create pie chart for Daerah Prioritas and Bukan Daerah Prioritas
-        data_pie = pd.DataFrame({
+        data_pie_prior = pd.DataFrame({
             'Kategori': ['Daerah Prioritas', 'Bukan Daerah Prioritas'],
-            'Jumlah': [40, 60]
+            'Jumlah': [(23 * 100 / 52), (29 * 100 / 52)]
         })
-        fig = px.pie(data_pie, names='Kategori', values='Jumlah', title='Distribusi Daerah Prioritas')
+        fig = px.pie(data_pie_prior, names='Kategori', values='Jumlah', title='Distribusi Daerah Prioritas')
+        st.plotly_chart(fig)
+
+        data_pie_ev = pd.DataFrame({
+            'Kategori': ['True Positive', 'False Positive', 'True Negatif', 'False Negatif'],
+            'Jumlah': [(20 * 100 / 52), (3 * 100 / 52), (24 * 100 / 52), (5 * 100 / 52)]
+        })
+        fig = px.pie(data_pie_ev, names='Kategori', values='Jumlah', title='Distribusi Testing Model')
+        st.plotly_chart(fig)
+
+        data_pie_success_learn = pd.DataFrame({
+            'Kategori': ['True Classification', 'False Classification'],
+            'Jumlah': [(44 * 100 / 52), (8 * 100 / 52)]
+        })
+        fig = px.pie(data_pie_success_learn, names='Kategori', values='Jumlah', title='Distribusi Success Rate Model')
         st.plotly_chart(fig)
 
         # Add map of Indonesia
