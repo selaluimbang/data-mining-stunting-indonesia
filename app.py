@@ -106,7 +106,9 @@ def main():
         prevalensi_ketidakcukupan_pangan = st.number_input("Prevalensi Ketidakcukupan Pangan", min_value=0.0, max_value=20.0, value=2.0, step=0.1)
         jumlah_penduduk = st.number_input("Jumlah Penduduk", min_value=0, max_value=30000000, value=100000, step=1)
         persentase_akses_sanitasi_layak = st.number_input("Persentase Akses Sanitasi Layak", min_value=0.0, max_value=100.0, value=50.0, step=0.1)
-        kategori_kepadatan = st.number_input("Kategori Kepadatan", min_value=0.0, max_value=100.0, value=50.0, step=0.1)
+        kategori_kepadatan = st.number_input("Kategori Kepadatan", min_value=1, max_value=4, value=2, step=1)
+        # kategori_kepadatan = st.selectbox("Pilih Kategori Kepadatan?",("Tidak Padat", "Kurang Padat", "Cukup Padat", "Sangat Padat"),)
+        # st.write("You selected:", kategori_kepadatan)
         rata_rata_pendapatan = st.number_input("Rata-rata Pendapatan", min_value=0, max_value=100000000, value=500000, step=1)
         jumlah_bencana_kekeringan = st.number_input("Jumlah Bencana Kekeringan", min_value=0, max_value=1000, value=0, step=1)
 
