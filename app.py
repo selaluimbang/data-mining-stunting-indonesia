@@ -37,7 +37,7 @@ def main():
             .stTextInput input, 
             .stSelectbox select {
                 background-color: #ffffff; 
-                color: #000000; 
+                color: #4285f4; 
                 border: 1px solid #4285f4; 
                 border-radius: 5px; 
                 padding: 5px;
